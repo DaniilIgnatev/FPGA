@@ -1,0 +1,6 @@
+module jk(input logic clk, j, k, output logic q, nq);
+
+
+
+
+endmodule

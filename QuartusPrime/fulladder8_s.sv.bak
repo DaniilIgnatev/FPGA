@@ -1,0 +1,5 @@
+module fulladder8_s(input logic clk, input logic a[7:0], input logic b[7:0], output logic s[7:0], output logic p);
+
+
+
+endmodule

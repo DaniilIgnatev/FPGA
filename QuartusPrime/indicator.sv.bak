@@ -1,0 +1,13 @@
+module indicator(input logic[4:0] digit, output logic[7:0] segments);
+
+always_comb
+begin
+	case (digit)
+			0: INDIC = 8'b10111111;
+			1: INDIC = 8'b00000110;
+			2: INDIC = 8'b01011011;
+			3: INDIC = 8'b01001111;
+			default: INDIC = 0;
+	endcase
+end
+endmodule

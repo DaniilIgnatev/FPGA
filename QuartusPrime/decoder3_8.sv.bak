@@ -1,0 +1,16 @@
+module decoder3_8(input logic[2:0] a, output logic[7:0] y);
+
+always_comb
+	case(a)
+		3'b000: y = 8'b00000001;
+		3'b000: y = 8'b00000001;
+		3'b000: y = 8'b00000001;
+		3'b000: y = 8'b00000001;
+		3'b000: y = 8'b00000001;
+		3'b000: y = 8'b00000001;
+		3'b000: y = 8'b00000001;
+		3'b000: y = 8'b00000001;
+		default: y = 8'bxxxxxxxx;
+	endcase
+
+endmodule

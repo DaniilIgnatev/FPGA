@@ -1,0 +1,144 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 14:35:53  August 27, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		project1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY stack_shift
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:35:53  AUGUST 27, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name SYSTEMVERILOG_FILE digits.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tristate.sv
+set_global_assignment -name SYSTEMVERILOG_FILE bus.sv
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+set_global_assignment -name SYSTEMVERILOG_FILE tb.sv
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id mainTB
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb2 -section_id mainTB
+set_global_assignment -name SYSTEMVERILOG_FILE mux2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux4.sv
+set_global_assignment -name EDA_BOARD_DESIGN_TIMING_TOOL "Stamp (Timing)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT STAMP -section_id eda_board_design_timing
+set_global_assignment -name SYSTEMVERILOG_FILE mux2_8.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flop.sv
+set_global_assignment -name SYSTEMVERILOG_FILE div2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sync.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mylatch.sv
+set_global_assignment -name SYSTEMVERILOG_FILE inv.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sevenseg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE decoder3_8.sv
+set_global_assignment -name SYSTEMVERILOG_FILE div4.sv
+set_global_assignment -name SYSTEMVERILOG_FILE priorityckt.sv
+set_global_assignment -name SYSTEMVERILOG_FILE priority_casez.sv
+set_global_assignment -name SYSTEMVERILOG_FILE crazy.sv
+set_global_assignment -name SYSTEMVERILOG_FILE div3_SM.sv
+set_global_assignment -name SYSTEMVERILOG_FILE patternMoore.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fulladder3.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fulladder2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fulladder8.sv
+set_global_assignment -name SYSTEMVERILOG_FILE fulladder8_s.sv
+set_global_assignment -name SYSTEMVERILOG_FILE multiplier.sv
+set_global_assignment -name SYSTEMVERILOG_FILE multiplier_signed.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux4_8.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux4_12.sv
+set_global_assignment -name SYSTEMVERILOG_FILE decoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE andN.sv
+set_global_assignment -name SYSTEMVERILOG_FILE comparator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU.sv
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name SYSTEMVERILOG_FILE counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE shiftreg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rom.sv
+set_global_assignment -name SYSTEMVERILOG_FILE jk.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE register.sv
+set_location_assignment PIN_A7 -to clk
+set_global_assignment -name BOARD "MAX 10 DE10 - Lite"
+set_global_assignment -name SYSTEMVERILOG_FILE indicator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE register_demo.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ram_demo.sv
+set_global_assignment -name SYSTEMVERILOG_FILE testbench.sv
+set_global_assignment -name EDA_TEST_BENCH_FILE tb2.sv -section_id mainTB
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE testbench.sv -section_id testbench
+set_global_assignment -name SYSTEMVERILOG_FILE stack_shift.sv
+set_global_assignment -name SYSTEMVERILOG_FILE stack_shift_demo.sv
+set_location_assignment PIN_B8 -to reset
+set_location_assignment PIN_C11 -to pop
+set_location_assignment PIN_C10 -to push
+set_location_assignment PIN_A10 -to read_data[0]
+set_location_assignment PIN_B10 -to read_data[1]
+set_location_assignment PIN_D13 -to read_data[2]
+set_location_assignment PIN_C13 -to read_data[3]
+set_location_assignment PIN_D12 -to write_data[0]
+set_location_assignment PIN_C12 -to write_data[1]
+set_location_assignment PIN_A12 -to write_data[2]
+set_location_assignment PIN_B12 -to write_data[3]
+set_global_assignment -name QIP_FILE RAM.qip
+set_global_assignment -name SYSTEMVERILOG_FILE combTestWithEnums.sv
+set_global_assignment -name SYSTEMVERILOG_FILE aluWithEnums.sv
+set_global_assignment -name SYSTEMVERILOG_FILE busTransiver.sv
+set_global_assignment -name SYSTEMVERILOG_FILE sumItUp_Thread.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to clk
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to reset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to pop
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to push
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to read_data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to read_data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to read_data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to read_data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to write_data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to write_data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to write_data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to write_data[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

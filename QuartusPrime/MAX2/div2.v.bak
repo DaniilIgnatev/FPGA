@@ -1,0 +1,9 @@
+module div2(input clk, output q);
+
+always_ff@(posdege clk)
+begin
+
+end
+
+endmodule
+

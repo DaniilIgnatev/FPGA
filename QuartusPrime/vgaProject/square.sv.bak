@@ -1,0 +1,10 @@
+module square
+#(
+parameter HALF_SIZE=80,
+ IX=320,
+ IY=240
+)
+
+
+
+endmodule

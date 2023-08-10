@@ -1,0 +1,50 @@
+module PC
+(
+	input logic i_clk,
+	input logic i_reset,
+	output logic o_vga_hs, o_vga_vs,
+	output logic[3:0] VGA_R, VGA_G, VGA_B,
+	input logic [6:0] i_addr,
+	input logic i_data,
+	input logic i_we,
+	input logic i_rc,
+	input logic i_flush 
+);
+
+logic reset, flush;
+assign reset = ~i_reset;
+assign flush = ~i_flush;
+
+logic [6:0] c_addr;
+assign c_addr = i_addr > 80 ? 80 : i_addr;
+
+logic [2:0] data;
+assign data = i_data ? 3'b111 : 3'b000;
+
+logic [16:0] row = 0;
+logic [16:0] col = 0;
+logic [16:0] addr = 0;
+
+
+always_ff@(posedge i_clk)
+begin
+	if (reset)
+	begin
+		row <= '0;
+		col <= '0;
+		addr <= '0;
+	end
+	else
+	begin
+		if (i_rc)
+			row <= c_addr * 3;
+		else
+			col <= c_addr * 4;
+		
+		addr <= row * 320 + col;
+	end
+end
+
+VideoControllerDebug video(i_clk, reset, o_vga_hs, o_vga_vs, VGA_R, VGA_G, VGA_B, data, addr, i_we, flush);
+
+endmodule

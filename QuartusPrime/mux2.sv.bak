@@ -1,0 +1,5 @@
+module mux2(input logic x[1:0], input logic s, output logic y);
+
+assign y = s ? x[1] : x[0];
+
+endmodule

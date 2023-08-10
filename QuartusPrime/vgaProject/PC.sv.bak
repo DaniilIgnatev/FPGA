@@ -1,0 +1,17 @@
+module PC
+(
+	input logic i_clk,
+	input logic i_reset,
+	output logic o_vga_hs, o_vga_vs,
+	output logic[3:0] VGA_R, VGA_G, VGA_B,
+);
+
+
+logic	[2:0] i_wdata;
+logic [16:0] i_waddr;
+logic i_we;
+logic i_flush;
+
+
+
+endmodule

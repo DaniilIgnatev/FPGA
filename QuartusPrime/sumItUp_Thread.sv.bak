@@ -1,0 +1,24 @@
+module sumItUp(
+	input logic clk,
+	input logic reset_l,
+	input logic clk,
+	input logic go_l,
+	input logic [15:0] inA,
+	output logic done,
+	output logic [15:0] sum
+);
+
+logic ld_l, cl_l, inAeq;
+logic [15:0] addOut;
+
+enum bit {sA, sB} state;
+
+always_ff@(posedge clk, negedge reset_l)
+begin st_machine
+	if (~reset_l)
+		state <= sA;
+	else
+	begin
+		
+	end
+end

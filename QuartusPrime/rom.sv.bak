@@ -1,0 +1,6 @@
+module rom(input logic[1:0] addr,
+output logic[2:0] dout);
+
+
+
+endmodule

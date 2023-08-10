@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "read_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "read_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "read_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "read_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pop",
+					"strict" : false
+				},
+				{
+					"name" : "push",
+					"strict" : false
+				},
+				{
+					"name" : "write_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "write_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "write_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "write_data[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

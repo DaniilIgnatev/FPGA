@@ -1,0 +1,8 @@
+D:/quartusprimeprojects/jk.sv {1 {vlog -work 1 -sv -stats=none D:/quartusprimeprojects/jk.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module jk
+
+Top level modules:
+	jk
+
+} {} {}}

@@ -1,0 +1,11 @@
+module stack_shift_demo(input logic clk, reset, push, pop, input logic[3:0] weite_data, output logic[3:0] read_data);
+
+stack_shift dut
+#(4,4)
+(
+clk, reset, push, pop,
+write_data,
+read_data 
+);
+
+endmodule

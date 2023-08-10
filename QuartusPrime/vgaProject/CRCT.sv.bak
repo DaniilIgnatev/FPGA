@@ -1,0 +1,11 @@
+module CRCT
+#(
+parameter HS_STA = 16,
+
+)
+();
+
+
+
+
+endmodule

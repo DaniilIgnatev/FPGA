@@ -1,0 +1,43 @@
+`timescale 1ns/1ns
+
+module tb2();
+
+logic clk = 0;
+logic reset = 0;
+logic enable = 0;
+
+
+always
+begin
+	#10
+	clk = ~clk;
+end
+
+
+logic a = 0;
+logic b = 0;
+logic out = 0;
+logic out_expected = 0;
+logic p = 0;
+
+
+jk dut(clk, );
+
+
+initial
+begin
+	vectornum = 0;
+	errors = 0;
+	reset = 1;
+	enable = 1;
+	reset = 0;
+end
+
+
+//Set test inputs at the pos edge
+always@(posedge clk)
+begin
+	
+end
+
+endmodule

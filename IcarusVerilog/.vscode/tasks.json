@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Verilog File",
+            "type": "shell",
+            "command": "cd ${fileDirname}; iverilog -o ${fileBasename}.vvp ${fileBasename}; vvp -N ${fileBasename}.vvp",
+            "problemMatcher": [
+                "$vlog-error"
+            ]
+        },
+        {
+            "label": "Run GTKWave",
+            "type": "shell",
+            "command": "cd ${fileDirname} ; gtkwave out.vcd"
+        }
+    ]
+}

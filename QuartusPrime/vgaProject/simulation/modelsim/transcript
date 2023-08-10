@@ -1,0 +1,62 @@
+# Compile of CRCT.sv was successful.
+# Compile of FrameBuffer.v was successful.
+# Compile of testbench.sv was successful.
+# Compile of VideoControllerDebug.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=\"+acc\" work.testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" work.testbench 
+# Start time: 18:06:24 on Sep 28,2020
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.VideoControllerDebug
+# Loading rtl_work.CRCT
+# Loading rtl_work.FrameBuffer
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'CRCT_640X480'.  Expected 15, found 13.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/CRCT_640X480 File: E:/quartusprimeprojects/vgaProject/VideoControllerDebug.sv Line: 42
+# ** Warning: (vsim-3722) E:/quartusprimeprojects/vgaProject/VideoControllerDebug.sv(42): [TFMPC] - Missing connection for port 'h_count'.
+# ** Warning: (vsim-3722) E:/quartusprimeprojects/vgaProject/VideoControllerDebug.sv(42): [TFMPC] - Missing connection for port 'v_count'.
+add dataflow sim:/testbench/dut/*
+# WARNING: No extended dataflow license exists
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: DomOficerov  Hostname: DESKTOP-BM937N9  ProcessID: 8164
+#           Attempting to use alternate WLF file "./wlft88awrq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft88awrq
+add wave -position insertpoint  \
+sim:/testbench/dut/i_clk \
+sim:/testbench/dut/i_reset \
+sim:/testbench/dut/o_vga_hs \
+sim:/testbench/dut/o_vga_vs \
+sim:/testbench/dut/VGA_R \
+sim:/testbench/dut/VGA_G \
+sim:/testbench/dut/VGA_B \
+sim:/testbench/dut/i_wdata \
+sim:/testbench/dut/i_waddr \
+sim:/testbench/dut/i_we \
+sim:/testbench/dut/i_flush \
+sim:/testbench/dut/CRCT_Blanking \
+sim:/testbench/dut/CRCT_Active \
+sim:/testbench/dut/CRCT_FrameEnd \
+sim:/testbench/dut/CRCT_ScreenEnd \
+sim:/testbench/dut/CRCT_X \
+sim:/testbench/dut/CRCT_Y \
+sim:/testbench/dut/CRCT_XY \
+sim:/testbench/dut/f_rdata \
+sim:/testbench/dut/displayedFrameID \
+sim:/testbench/dut/ff_rdata \
+sim:/testbench/dut/sf_rdata \
+sim:/testbench/dut/pix_stb \
+sim:/testbench/dut/pix_add
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: testbench.dut.firstFrame.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: testbench.dut.secondFrame.altsyncram_component.m_default.altsyncram_inst
+# Break key hit
+# Simulation stop requested.
+# End time: 18:08:30 on Sep 28,2020, Elapsed time: 0:02:06
+# Errors: 1, Warnings: 11

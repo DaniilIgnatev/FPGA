@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="simulation/unsaved.v" type="VERILOG" />
+ <topLevel name="unsaved" />
+ <deviceFamily name="max10" />
+</simPackage>

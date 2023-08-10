@@ -1,0 +1,7 @@
+module crazy(input logic a, output logic b);
+
+assign a = b;
+assign b = a;
+assign a = b;
+
+endmodule

@@ -1,0 +1,16 @@
+# system info unsaved on 2020.09.18.16:41:20
+system_info:
+name,value
+DEVICE,10M50DAF484C7G
+DEVICE_FAMILY,MAX 10
+GENERATION_ID,1600436479
+#
+#
+# Files generated for unsaved on 2020.09.18.16:41:20
+files:
+filepath,kind,attributes,module,is_top
+simulation/unsaved.v,VERILOG,,unsaved,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module

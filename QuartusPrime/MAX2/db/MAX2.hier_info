@@ -1,0 +1,6 @@
+|top
+clk => o1.DATAIN
+o1 <= clk.DB_MAX_OUTPUT_PORT_TYPE
+o2 <= <VCC>
+
+

@@ -1,0 +1,11 @@
+module shiftreg
+#(parameter N = 8)
+(input logic clk, reset, load,
+input logic sin,
+input logic[N-1:0] d,
+output logic [N-1:0] q,
+output logic sout);
+
+
+
+endmodule

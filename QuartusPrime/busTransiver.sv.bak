@@ -1,0 +1,11 @@
+module busTransiver
+(
+	input logic enableDrive,
+	input logic valueToDrive,
+	output logic valueReceived,
+	inout logic busLine
+);
+
+assign valueReceived = 
+
+endmodule

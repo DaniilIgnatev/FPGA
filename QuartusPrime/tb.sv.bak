@@ -1,0 +1,14 @@
+module tb();
+
+logic clk;
+
+always
+begin
+#10
+clk = ~clk;
+end
+
+
+
+endmodule
+

@@ -1,0 +1,12 @@
+module divn
+#(
+parameter N = 2
+)
+(
+	input wire i_clk,
+	output wire o_q
+);
+
+
+
+endmodule

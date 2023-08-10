@@ -1,0 +1,28 @@
+typedef enum bit [2:0]{
+	ADD = 3'b100,
+	SUB = 3'b010,
+	AND = 3'b001,
+	OR = 3'b110,
+	XOR = 3'b011
+} aluFun_t;
+
+
+module aluWithEnums
+(
+	input bit [7:0] a, b,
+	output bit [7:0] result,
+	input aluFun_t op
+);
+
+always_comb
+begin
+	unique case (op)
+		ADD: result = a + b;
+		SUB: result = a - b;
+		AND: result = a & b;
+		OR: result = a | b;
+		XOR: result = a ^ b;
+	endcase
+end
+
+endmodule

@@ -1,0 +1,92 @@
+# Compile of jk.sv was successful.
+# Compile of tb2.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim 1.tb2
+# vsim 1.tb2 
+# Start time: 18:39:35 on Sep 05,2020
+# Loading sv_std.std
+# Loading work.tb2
+# Loading rtl_work.jk
+# ** Error: (vsim-3043) Unresolved reference to 'errors'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb2 File: D:/quartusprimeprojects/tb2.sv Line: 45
+# ** Error: (vsim-3043) Unresolved reference to 'vectornum'.
+#    Time: 0 ns  Iteration: 0  Instance: /tb2 File: D:/quartusprimeprojects/tb2.sv Line: 45
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./project1_run_msim_rtl_verilog.do PAUSED at line 12
+# Compile of jk.sv was successful.
+# Compile of tb2.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim 1.tb2
+# vsim 1.tb2 
+# Start time: 18:39:35 on Sep 05,2020
+# Loading sv_std.std
+# Loading work.tb2
+# Loading rtl_work.jk
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/tb2/clk
+add wave -r /*
+add wave sim:/tb2/*
+run -all
+# ** Note: $finish    : D:/quartusprimeprojects/tb2.sv(45)
+#    Time: 25 ns  Iteration: 0  Instance: /tb2
+# 1
+# Break in Module tb2 at D:/quartusprimeprojects/tb2.sv line 45
+quit -sim
+# End time: 18:45:16 on Sep 05,2020, Elapsed time: 0:05:41
+# Errors: 8, Warnings: 6
+# Compile of jk.sv was successful.
+# Compile of tb2.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim 1.tb2
+# vsim 1.tb2 
+# Start time: 18:45:26 on Sep 05,2020
+# Loading sv_std.std
+# Loading 1.tb2
+# Loading 1.jk
+add wave sim:/tb2/*
+run -all
+# ** Note: $finish    : D:/quartusprimeprojects/tb2.sv(81)
+#    Time: 85 ns  Iteration: 0  Instance: /tb2
+# 1
+# Break in Module tb2 at D:/quartusprimeprojects/tb2.sv line 81
+quit -sim
+# End time: 18:48:22 on Sep 05,2020, Elapsed time: 0:02:56
+# Errors: 0, Warnings: 2
+vlog -work 1 -sv D:/quartusprimeprojects/jk.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:48:25 on Sep 05,2020
+# vlog -reportprogress 300 -work 1 -sv D:/quartusprimeprojects/jk.sv 
+# -- Compiling module jk
+# 
+# Top level modules:
+# 	jk
+# End time: 18:48:25 on Sep 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work 1 -sv D:/quartusprimeprojects/tb2.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:48:25 on Sep 05,2020
+# vlog -reportprogress 300 -work 1 -sv D:/quartusprimeprojects/tb2.sv 
+# -- Compiling module tb2
+# 
+# Top level modules:
+# 	tb2
+# End time: 18:48:26 on Sep 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim 1.tb2
+# vsim 1.tb2 
+# Start time: 18:48:35 on Sep 05,2020
+# Loading sv_std.std
+# Loading 1.tb2
+# Loading 1.jk
+add wave sim:/tb2/*
+run -all
+# ** Note: $finish    : D:/quartusprimeprojects/tb2.sv(81)
+#    Time: 85 ns  Iteration: 0  Instance: /tb2
+# 1
+# Break in Module tb2 at D:/quartusprimeprojects/tb2.sv line 81
+# End time: 18:50:42 on Sep 05,2020, Elapsed time: 0:02:07
+# Errors: 0, Warnings: 1
