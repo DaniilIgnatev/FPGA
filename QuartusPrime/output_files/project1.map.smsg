@@ -1,3 +1,0 @@
-Warning (10273): Verilog HDL warning at tristate.sv(3): extended using "x" or "z" File: C:/Users/Daniil/YandexDisk/HDL/QuartusPrime/tristate.sv Line: 3
-Info (10281): Verilog HDL Declaration information at jk.sv(1): object "q" differs only in case from object "Q" in the same scope File: C:/Users/Daniil/YandexDisk/HDL/QuartusPrime/jk.sv Line: 1
-Warning (10273): Verilog HDL warning at busTransiver.sv(11): extended using "x" or "z" File: C:/Users/Daniil/YandexDisk/HDL/QuartusPrime/busTransiver.sv Line: 11
